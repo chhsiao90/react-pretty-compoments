@@ -1,0 +1,11 @@
+.xml-node-indent {
+    margin: 20px
+}
+
+.xml-node {
+    color: blue
+}
+
+.xml-node-attr-value {
+    color: green
+}
