@@ -34,5 +34,11 @@
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.16.2",
     "xml2js": "^0.4.17"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/__tests__/*.js"
+    ]
   }
 }
