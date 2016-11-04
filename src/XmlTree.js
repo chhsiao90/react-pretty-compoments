@@ -1,6 +1,6 @@
-import React, {Component} from 'react'
-import {Parser} from 'xml2js'
-import XmlNode from './XmlNode'
+import React, {Component} from 'react';
+import {Parser} from 'xml2js';
+import XmlNode from './XmlNode';
 
 export default class XmlTree extends Component {
     constructor(props) {
@@ -40,4 +40,4 @@ export default class XmlTree extends Component {
             </div>
         );
     }
-};
+}

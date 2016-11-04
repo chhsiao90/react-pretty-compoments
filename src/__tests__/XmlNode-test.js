@@ -50,21 +50,17 @@ describe('XmlNode', () => {
 
         const result = renderer.getRenderOutput();
 
-        const expectedAttrs = [
-            (
-                <span className='xml-node-attr'>
-                    <span className='xml-node-attr-name'>&nbsp;{'attr1'}</span>
-                    <span className='xml-node-symbol'>&#61;</span>
-                    <span className='xml-node-attr-value'>&quot;{'value1'}&quot;</span>
-                </span>
-            ),
-            (
-                <span className='xml-node-attr'>
-                    <span className='xml-node-attr-name'>&nbsp;{'attr2'}</span>
-                    <span className='xml-node-symbol'>&#61;</span>
-                    <span className='xml-node-attr-value'>&quot;{'value2'}&quot;</span>
-                </span>
-            ),
+        const expectedAttrs = [ 
+            <span className='xml-node-attr'>
+                <span className='xml-node-attr-name'>&nbsp;{'attr1'}</span>
+                <span className='xml-node-symbol'>&#61;</span>
+                <span className='xml-node-attr-value'>&quot;{'value1'}&quot;</span>
+            </span>,
+            <span className='xml-node-attr'>
+                <span className='xml-node-attr-name'>&nbsp;{'attr2'}</span>
+                <span className='xml-node-symbol'>&#61;</span>
+                <span className='xml-node-attr-value'>&quot;{'value2'}&quot;</span>
+            </span>,
         ];
         expect(result).toEqual(
             <div className='xml-node'>

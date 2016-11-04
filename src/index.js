@@ -1,1 +1,1 @@
-export XmlTree from './XmlTree'
+export XmlTree from './XmlTree';

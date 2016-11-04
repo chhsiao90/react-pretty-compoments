@@ -1,11 +1,11 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
 
 export default class XmlNode extends Component {
 
     render() {
         const {
             name, node
-        } = this.props
+        } = this.props;
 
         const makeNodeWithChildren = function(node, nodeName) {
             const attrs = makeAttrs(node['$'] || {});
@@ -49,7 +49,7 @@ export default class XmlNode extends Component {
                         <span className='xml-node-attr-value'>&quot;{attrs[k]}&quot;</span>
                     </span>
             ));
-        }
+        };
 
         var content;
         if (node instanceof Array) {
@@ -57,10 +57,10 @@ export default class XmlNode extends Component {
             for (var i = 0; i < node.length; i++) {
                 const childNode = node[i];
                 if (childNode['$$']) {
-                    children.push(makeNodeWithChildren(childNode, name))
+                    children.push(makeNodeWithChildren(childNode, name));
                 }
                 else {
-                    children.push(makeNodeWithoutChildren(childNode, name))
+                    children.push(makeNodeWithoutChildren(childNode, name));
                 }
             }
             content = (
