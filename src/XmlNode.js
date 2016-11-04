@@ -43,7 +43,7 @@ export default class XmlNode extends Component {
             return Object
                 .keys(attrs)
                 .map(k => (
-                    <span className="xml-node-attr">
+                    <span className='xml-node-attr'>
                         <span className='xml-node-attr-name'>&nbsp;{k}</span>
                         <span className='xml-node-symbol'>&#61;</span>
                         <span className='xml-node-attr-value'>&quot;{attrs[k]}&quot;</span>
